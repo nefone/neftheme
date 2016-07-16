@@ -20,7 +20,7 @@
 <?php wp_head(); ?>
 </head>
     
-<?php add_action('wp_enqueue_scripts', 'my_script'); ?>
+<?php add_action('wp_enqueue_scripts', 'bootstrap_inc'); ?>
     
 <body <?php body_class(); ?>>
 <div class="container-fluid">    
@@ -32,16 +32,22 @@
 		<div class="navbar-header site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title">
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                </h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site-title">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                </p>
 			<?php
 			endif;
             ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'neftheme' ); ?></button>
+			<button class="btn btn-default menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <?php esc_html_e( 'Primary Menu', 'neftheme' ); ?>
+            </button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'nav navbar-nav navbar-right', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
         </div><!-- .navbar -->
