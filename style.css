@@ -1,9 +1,9 @@
 /*
 Theme Name: neftheme
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: http://nefone.ru/
+Author: Toropov Alexandr
+Author URI: http://nefone.ru/
+Description: Small Adaptive theme for WordPress created with Bootstrap 3
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -891,8 +891,4 @@ object {
 
 .gallery-caption {
 	display: block;
-}
-
-.site-title {
-	clear: both;
 }
