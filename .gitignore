@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/copyright/
+.idea/modules.xml
+.idea/neftheme.iml
+.idea/workspace.xml
+js/**.min.js
+css/**.min.css
